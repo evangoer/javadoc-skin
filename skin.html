@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<title>Javadoc Skin</title>
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.4.1/build/cssfonts/cssfonts-min.css&3.4.1/build/cssreset/cssreset-min.css&3.4.1/build/cssgrids/cssgrids-min.css">
+<html>
+<head>
+    <title>Javadoc Skin</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.4.1/build/cssfonts/cssfonts-min.css&3.4.1/build/cssreset/cssreset-min.css&3.4.1/build/cssgrids/cssgrids-min.css">
+</head>
 
+<body class="yui3-skin-sam">
+    
 <div class="yui3-g layout">
     <div class="yui3-u left">
         <div class="nav packages"></div>
@@ -15,17 +20,22 @@
 <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
 <script>
 YUI({
-    modules: {
-        'javadoc-skin': {
-            fullpath: 'http://localhost/javadoc/js/javadoc-skin.js',
-            requires: ['node-load', 'javadoc-skin-css']
-        },
-        'javadoc-skin-css': {
-            fullpath: 'http://localhost/javadoc/assets/javadoc-skin.css',
-            type: 'css'
+    groups: {
+        'local-modules': {
+            base: '/build/',
+            modules: {
+                'javadoc-skin': {
+                    path: 'javadoc-skin/js/javadoc-skin.js',
+                    requires: ['node-load'],
+                    skinnable: true
+                }
+            }
         }
     }
+
 }).use('javadoc-skin', function (Y) {
     Y.log('loaded javadoc');
 });
 </script>
+</body>
+</html>
