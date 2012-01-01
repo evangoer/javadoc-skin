@@ -1,0 +1,5 @@
+<project default="javadoc">
+<target name="javadoc" description="Build Javadoc from Java source files">
+  <javadoc destdir="java6" packagenames="org.*" sourcepath="src"/>
+</target>
+</project>
