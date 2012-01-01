@@ -14,7 +14,18 @@
 
 <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
 <script>
-YUI({ /* TODO MODULE CONFIG */ }).use('javadoc-skin', function (Y) {
+YUI({
+    modules: {
+        'javadoc-skin': {
+            fullpath: 'http://localhost/javadoc/js/javadoc-skin.js',
+            requires: ['node-load', 'javadoc-skin-css']
+        },
+        'javadoc-skin-css': {
+            fullpath: 'http://localhost/javadoc/assets/javadoc-skin.css',
+            type: 'css'
+        }
+    }
+}).use('javadoc-skin', function (Y) {
     Y.log('loaded javadoc');
 });
 </script>
