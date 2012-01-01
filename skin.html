@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<title>Javadoc Skin</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.4.1/build/cssfonts/cssfonts-min.css&3.4.1/build/cssreset/cssreset-min.css&3.4.1/build/cssgrids/cssgrids-min.css">
+
+<div class="yui3-g layout">
+    <div class="yui3-u left">
+        <div class="nav packages"></div>
+        <div class="nav classes"></div>
+    </div>
+    <div class="yui3-u right">
+        <div class="api"></div>
+    </div>
+</div>
+
+<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+<script>
+YUI({ /* TODO MODULE CONFIG */ }).use('javadoc-skin', function (Y) {
+    Y.log('loaded javadoc');
+});
+</script>
