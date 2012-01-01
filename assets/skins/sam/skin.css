@@ -1,17 +1,11 @@
-/* super-duper reset */
-font { font-size: 100%; }
-table, tr, td, th { border: none; background-color: #fff; }
+/* skin styles */
+dt pre { background: #f2f2f2; border-radius: 3px; padding: 0.25em; border: 1px #e8e8e8 solid; }
+.left { border-right: 1px solid #e8e8e8; }
 
 body { font-family: 'Lucida Grande', Helvetica, 'DejaVu Sans', 'Bitstream Vera Sans', sans-serif; color: #333; }
 code, pre { font-family: Menlo, Monaco, 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier New', Courier; }
 a { color: #356DE4;}
 a:visited { color: #6D93E4;}
-
-.nav, .api { padding: 0.5em; }
-.layout { padding-left: 20em; }
-.left   { border-right: 1px solid #e8e8e8; width: 20em; margin-left: -20em;}
-.right  { width: 99%; }
-.packages, .classes { overflow: auto; }
 
 h2, font[size] b, .NavBarFont1Rev b { font-size: 167%; margin: 0em 0em 0.85em 0em; color: #000; font-weight: normal; }
 .NavBarFont1Rev b { font-weight: bold; color: #137; margin-left: -3px; }
@@ -21,7 +15,6 @@ h3 { font-size: 123.1%; margin: 0em 0em 0.85em 0em; color: #000; font-weight: no
 dl, p { margin: 0.85em 0em; }
 table + p { margin: 0em 0em; }
 dd { margin-left: 3em; }
-dt pre { background: #f2f2f2; border-radius: 3px; padding: 0.25em; border: 1px #e8e8e8 solid; }
 
 hr { border: none;}
 dl + hr { border-bottom: 1px solid #e8e8e8; margin-left: -0.5em;}

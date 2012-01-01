@@ -1,0 +1,10 @@
+/* super-duper reset */
+font { font-size: 100%; }
+table, tr, td, th { border: none; background-color: #fff; }
+
+/* layout */
+.nav, .api { padding: 0.5em; }
+.layout { padding-left: 20em; }
+.left   { width: 20em; margin-left: -20em;}
+.right  { width: 99%; }
+.packages, .classes { overflow: auto; }
