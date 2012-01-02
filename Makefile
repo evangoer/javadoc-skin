@@ -38,4 +38,4 @@ $(build)/$(sam):
 $(build)/js:
 	mkdir -p $(build)/js
 
-.PHONY: deply-javadoc clean
+.PHONY: build-javadoc clean
