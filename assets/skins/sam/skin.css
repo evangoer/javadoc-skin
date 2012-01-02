@@ -16,7 +16,7 @@ dl, p { margin: 0.85em 0em; }
 table + p { margin: 0em 0em; }
 dd { margin-left: 3em; }
 
-hr { border: none;}
+hr { border: none; }
 dl + hr { border-bottom: 1px solid #e8e8e8; margin-left: -0.5em;}
 
 .TableRowColor td[align=right] { padding-right: 0.5em; padding-top: 1px; font-size: 92%; vertical-align: baseline; }
