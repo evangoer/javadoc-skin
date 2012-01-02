@@ -8,7 +8,8 @@ css-core=assets/core.css
 css-sam=$(sam)/skin.css
 css=$(css-core) $(css-sam)
 
-build: $(js) $(css) 
+
+build: $(js) $(css) skin.html
 
 $(css-core): $(build)/$(sam) 
 	cat assets/core.css > $(build)/$(sam)/javadoc-skin.css
@@ -19,12 +20,15 @@ $(css-sam): $(build)/$(sam)
 $(js): $(build)/js
 	cp $(js) $(build)/$(js)
 
+skin.html: $(build)/$(sam)
+	cp skin.html $(javadoc)/java6
+
 preview: build-skin
 	cp -R java/java6 $(javadoc)
-	cp -R skin.html $(javadoc)/java6
 
 clean:
 	rm -rf $(build)/*
+	rm -f $(javadoc)/java6/skin.html
 
 $(build)/$(sam):
 	mkdir -p $(build)/$(sam)
