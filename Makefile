@@ -23,7 +23,9 @@ $(js): $(build)/js
 skin.html: $(build)/$(sam)
 	cp skin.html $(javadoc)/java6
 
-preview: build-skin
+# TODO: This target should probably build javadoc from src.
+build-javadoc:
+	mkdir $(javadoc) 
 	cp -R java/java6 $(javadoc)
 
 clean:
@@ -36,4 +38,4 @@ $(build)/$(sam):
 $(build)/js:
 	mkdir -p $(build)/js
 
-.PHONY: preview build-skin clean
+.PHONY: deply-javadoc clean
